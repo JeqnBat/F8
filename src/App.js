@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Wheel from './components/Wheel'
+import Form from './components/Form'
+import modal from './data/modal'
+import { StoreProvider, createStore } from 'easy-peasy'
 
-function App() {
+const store = createStore(modal)
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <StoreProvider store={store}>
+      <Form />
+      <Wheel />
+    </StoreProvider>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,160 @@
+/**
+ * Wheel.js custom CSS
+ */
+#wrapper {
+  height: 340px;
+  width: 340px;
+  border-radius: 170px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#wheel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(50% at 50% 50%);
+}
+.element {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* 2 elements scenario
+________________________________________________________ */
+.element-2 {
+  height: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.element-2:nth-child(1) {
+  background: red;
+}
+.element-2:nth-child(2) {
+  background: blue;
+  transform: translateY(100%) rotateX(180deg);
+}
+/* 3 elements scenario
+________________________________________________________ */
+.element-3 {
+  height: 100%;
+  clip-path: polygon(50% 50%, -37% 100%, 137% 100%);
+}
+.element-3:nth-child(1) {
+  background: red;
+}
+.element-3:nth-child(2) {
+  background: blue;
+  transform: rotate(120deg);
+}
+.element-3:nth-child(3) {
+  background: green;
+  transform: rotate(240deg);
+}
+/* 4 elements scenario
+________________________________________________________ */
+.element-4 {
+  height: 100%;
+  clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+}
+.element-4:nth-child(1) {
+  background: red;
+}
+.element-4:nth-child(2) {
+  background: blue;
+  transform: rotate(90deg);
+}
+.element-4:nth-child(3) {
+  background: green;
+  transform: rotate(180deg);
+}
+.element-4:nth-child(4) {
+  background: yellow;
+  transform: rotate(270deg);
+}
+/* 5 elements scenario
+________________________________________________________ */
+.element-5 {
+  height: 100%;
+  clip-path: polygon(50% 50%, 14% 100%, 87% 100%);
+}
+.element-5:nth-child(1) {
+  background: red;
+}
+.element-5:nth-child(2) {
+  background: blue;
+  transform: rotate(72deg);
+}
+.element-5:nth-child(3) {
+  background: green;
+  transform: rotate(144deg);
+}
+.element-5:nth-child(4) {
+  background: yellow;
+  transform: rotate(216deg);
+}
+.element-5:nth-child(5) {
+  background: grey;
+  transform: rotate(288deg);
+}
+/* 6 elements scenario
+________________________________________________________ */
+.element-6 {
+  height: 100%;
+  clip-path: polygon(50% 50%, 21% 100%, 79% 100%);
+}
+.element-6:nth-child(1) {
+  background: red;
+}
+.element-6:nth-child(2) {
+  background: blue;
+  transform: rotate(60deg);
+}
+.element-6:nth-child(3) {
+  background: green;
+  transform: rotate(120deg);
+}
+.element-6:nth-child(4) {
+  background: yellow;
+  transform: rotate(180deg);
+}
+.element-6:nth-child(5) {
+  background: grey;
+  transform: rotate(240deg);
+}
+.element-6:nth-child(6) {
+  background: pink;
+  transform: rotate(300deg);
+}
+/* 7 elements scenario
+________________________________________________________ */
+.element-7 {
+  height: 100%;
+  clip-path: polygon(50% 50%, 26% 100%, 74% 100%);
+}
+.element-7:nth-child(1) {
+  background: red;
+}
+.element-7:nth-child(2) {
+  background: blue;
+  transform: rotate(51.4deg);
+}
+.element-7:nth-child(3) {
+  background: green;
+  transform: rotate(102.8deg);
+}
+.element-7:nth-child(4) {
+  background: yellow;
+  transform: rotate(154.2deg);
+}
+.element-7:nth-child(5) {
+  background: grey;
+  transform: rotate(205.6deg);
+}
+.element-7:nth-child(6) {
+  background: pink;
+  transform: rotate(257deg);
+}
+.element-7:nth-child(7) {
+  background: black;
+  transform: rotate(308.4deg);
+}

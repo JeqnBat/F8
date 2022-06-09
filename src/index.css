@@ -1,13 +1,32 @@
+/**
+ * NAME : FORTUNE WHEELER
+ * DESCR : 1st React Mini Project
+ * AUTHOR : JB PELLIER
+ */
+
+/* 1. VARIABLES
+________________________________________________________ */
+:root {
+  --bg-primary: aliceblue;
+  --font-primary-color: dimgray;
+}
+/* 2. BODY, ROOT
+________________________________________________________ */
 body {
   margin: 0;
+  padding: 0;
+}
+#root {
+  background-color: var(--bg-primary);
+  color: var(--font-primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
