@@ -3,23 +3,40 @@ import { useStoreActions } from 'easy-peasy'
 import React, { useState } from 'react'
 
 const Form = () => {
-  const [newValue, setNewValue] = useState(null)
+  const [item, setItem] = useState('')
   const { add } = useStoreActions(actions => actions)
 
-  const inputValue = (e) => {
-    setNewValue(e.target.value)
+  const noBlanks = (val) => {
+    if (val === null) {
+      return false
+    } else {
+      return val.trim()
+    }
   }
-  
+  const superAdd = (val) => {
+    add(val)
+    setItem('')
+  }
+
   return (
-    <section id="option-feed">
-      <form onSubmit={(e) => {
+    <section id="input-section">
+      <form autoComplete="off" onSubmit={(e) => {
         e.preventDefault()
-        add(newValue)}}>
+        noBlanks(item) ? superAdd(item) : window.alert('plz write something before submitting new item')
+      }}>
+        <input
+          autoComplete="off"
+          type="text"
+          name="option"
+          maxLength="25"
+          onChange={(e) => setItem(e.target.value)}
+          value={item}
+        />
         <label htmlFor="option">
           Enter new option
         </label>
-        <input type="text" name="option" onChange={inputValue} />
-        <button type="submit">Add</button>
+        <div className="border-bottom"></div>
+        <button type="submit"> + </button>
       </form>
     </section>
   )

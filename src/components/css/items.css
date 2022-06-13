@@ -1,0 +1,38 @@
+/**
+ * Items.js custom CSS
+ */
+ #items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#items > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  line-height: 50px;
+  background-color: var(--secondary);
+  border: 1px solid dimgrey;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+#items > div:hover {
+  background-color: rgb(87, 93, 100);
+}
+#items > div > span:nth-child(odd) {
+  text-align: center;
+  width: 30px;
+}
+#items > div > div:nth-child(even) {
+  width: 290px;
+}
+.cross {
+  transition: all .1s ease-in-out;
+}
+.cross:hover {
+  color: red;
+}

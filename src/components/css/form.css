@@ -1,9 +1,74 @@
 /**
  * Form.js custom CSS
  */
-#option-feed {
+#input-section {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+#items > form {
+  position: relative;
+}
+form {
+  position: relative;
+}
+label {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transform: translate(12px, 18px);
+  transition: all .2s ease-in-out;
+  color: grey;
+  font-size: .9rem;
+}
+input {
+  height: 40px;
+  outline: none;
+  border: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 12px;
+  background: transparent;
+  border-bottom: 1px solid grey;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  width: 280px;
+}
+input:focus ~ label {
+  transform: translate(12px, 2px);
+  font-size: .6rem;
+  color: var(--form);
+}
+input:focus ~ .border-bottom {
+  transform: scaleX(1);
+}
+.border-bottom {
+  transform: scaleX(0);
+  position: absolute;
+  inset: 0;
+  border-bottom: 2px solid var(--form);
+  pointer-events: none;
+  transition: all .2s ease-in-out;
+  width: 280px;
+  padding: 12px;
+}
+form > button {
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+form > button:hover {
+  color: var(--form);
+}
+form > button:active {
+  background: dimgrey;
+  color: var(--font-primary-color);
 }

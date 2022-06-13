@@ -7,8 +7,10 @@
 /* 1. VARIABLES
 ________________________________________________________ */
 :root {
-  --bg-primary: aliceblue;
-  --font-primary-color: dimgray;
+  --bg-primary: rgb(39,42,46);
+  --font-primary-color: aliceblue;
+  --secondary: rgb(66, 71, 77);
+  --form: royalblue;
 }
 /* 2. BODY, ROOT
 ________________________________________________________ */
