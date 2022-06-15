@@ -9,9 +9,9 @@ const Page = () => {
 
   return (
     <>
-      {layout.formIsVisible ? <Form /> : null}
+      <Form />
       <Items />
-      {layout.wheelIsVisible ? <Wheel /> : null}
+      <Wheel />
       <Roller />
     </>
   )

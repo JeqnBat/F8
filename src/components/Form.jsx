@@ -32,11 +32,9 @@ const Form = () => {
           onChange={(e) => setItem(e.target.value)}
           value={item}
         />
-        <label htmlFor="option">
-          Enter new option
-        </label>
+        <label htmlFor="option">Enter new option</label>
         <div className="border-bottom"></div>
-        <button type="submit"> + </button>
+        <button type="submit">+</button>
       </form>
     </section>
   )

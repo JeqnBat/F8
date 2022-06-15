@@ -17,15 +17,17 @@ ________________________________________________________ */
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 #root {
   background-color: var(--bg-primary);
   color: var(--font-primary-color);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
